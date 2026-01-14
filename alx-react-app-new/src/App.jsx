@@ -8,6 +8,7 @@ function App() {
   return (
     <div>
       {/* City Components from your first task */}
+      <WelcomeMessage /> 
       <Header />
       <MainContent />
 
