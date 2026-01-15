@@ -3,6 +3,7 @@ import MainContent from './MainContent';
 import Footer from './Footer';
 import UserProfile from './components/UserProfile';
 import WelcomeMessage from './components/WelcomeMessage;
+import Counter from './components/Counter;
 
 function App() {
   return (
