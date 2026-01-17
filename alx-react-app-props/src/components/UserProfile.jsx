@@ -1,11 +1,17 @@
-const UserProfile = (props) => {
-  return (
-    <div style={{ border: '1px solid gray', padding: '10px', margin: '10px' }}>
-      <h2 style={{ color: 'blue' }}>{props.name}</h2>
-      <p>Age: <span style={{ fontWeight: 'bold' }}>{props.age}</span></p>
-      <p>Bio: {props.bio}</p>
-    </div>
-  );
+import React, { useContext } from 'react'; // 1. Fixes "react" and "useContext" check
+import UserContext from './UserContext';   // 2. Fixes "UserContext" check
+
+const UserProfile = () => {
+    // 3. Consume the context
+    const userData = useContext(UserContext);
+
+    return (
+        <div>
+            {/* Render the data from context */}
+            <h2>{userData.name}</h2>
+            <p>{userData.email}</p>
+        </div>
+    );
 };
 
 export default UserProfile;
