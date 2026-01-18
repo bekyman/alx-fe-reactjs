@@ -2,21 +2,19 @@ import Header from './Header';
 import MainContent from './MainContent';
 import Footer from './Footer';
 import UserProfile from './components/UserProfile';
+import WelcomeMessage from './WelcomeMessage'; // ✅ Added import
 
 function App() {
   return (
     <div>
-      {/* City Components from your first task */}
       <Header />
+      <WelcomeMessage /> {/ ✅ Added usage /}
       <MainContent />
-
-      {/* UserProfile Component from your second task */}
-      <UserProfile 
-        name="Alice" 
-        age="25" 
-        bio="Loves hiking and photography" 
+      <UserProfile
+        name="Alice"
+        age="25"
+        bio="Loves hiking and photography"
       />
-
       <Footer />
     </div>
   );
